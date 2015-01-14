@@ -225,7 +225,21 @@ public class Table
 
         List <Comparable []> rows = null;
 
-        //  T O   B E   I M P L E M E N T E D 
+        //  T O   B E   I M P L E M E N T E D
+	rows = new ArrayList<Comparable[]>();
+	int rowLength_t1 = this.tuples.size();
+	int rowLength_t2 = table2.tuples.size();
+	Comparable [] tuple;
+	
+	for(int i = 0; i < rowLength_t1; i++) {
+	    tuple = this.tuples.get(i);
+	    rows.add(tuple);
+	}
+
+	for(int i = 0; i < rowLength_t2; i++) {
+	    tuple = this.tuples.get(i);
+	    rows.add(tuple);
+	}
 
         return new Table (name + count++, attribute, domain, key, rows);
     } // union
