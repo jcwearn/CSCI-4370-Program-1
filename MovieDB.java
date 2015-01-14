@@ -114,13 +114,13 @@ class MovieDB
         t_iselect.print ();
 
         //--------------------- union
-	/*
+	
         out.println ();
         Table t_union = movie.union (cinema);
         t_union.print ();
 
         //--------------------- minus
-
+	/*
         out.println ();
         Table t_minus = movie.minus (cinema);
         t_minus.print ();
