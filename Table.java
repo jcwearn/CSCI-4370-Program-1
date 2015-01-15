@@ -164,8 +164,10 @@ public class Table
 
 	for(int i = 0; i < rowLength; i++) {
 	    tuple = this.tuples.get(i);
-	    if(predicate.test(tuple) == true)
+	    if(predicate.test(tuple) == true) {
 		rows.add(tuple);
+		//this.index.put(, tuple);
+	    }
 	}
 
         return new Table (name + count++, attribute, domain, key, rows);
